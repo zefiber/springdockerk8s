@@ -1,0 +1,412 @@
+Attaching to sop_mysql, sop_springdocker
+[36msop_mysql       |[0m Initializing database
+[36msop_mysql       |[0m 2018-05-07T17:52:35.753161Z 0 [Warning] TIMESTAMP with implicit DEFAULT value is deprecated. Please use --explicit_defaults_for_timestamp server option (see documentation for more details).
+[36msop_mysql       |[0m 2018-05-07T17:52:36.102435Z 0 [Warning] InnoDB: New log files created, LSN=45790
+[36msop_mysql       |[0m 2018-05-07T17:52:36.181333Z 0 [Warning] InnoDB: Creating foreign key constraint system tables.
+[36msop_mysql       |[0m 2018-05-07T17:52:36.255635Z 0 [Warning] No existing UUID has been found, so we assume that this is the first time that this server has been started. Generating a new UUID: 6d1809ab-521f-11e8-a63b-0242ac120002.
+[36msop_mysql       |[0m 2018-05-07T17:52:36.263431Z 0 [Warning] Gtid table is not ready to be used. Table 'mysql.gtid_executed' cannot be opened.
+[36msop_mysql       |[0m 2018-05-07T17:52:36.265994Z 1 [Warning] root@localhost is created with an empty password ! Please consider switching off the --initialize-insecure option.
+[36msop_mysql       |[0m 2018-05-07T17:52:37.190312Z 1 [Warning] 'user' entry 'root@localhost' ignored in --skip-name-resolve mode.
+[36msop_mysql       |[0m 2018-05-07T17:52:37.190667Z 1 [Warning] 'user' entry 'mysql.session@localhost' ignored in --skip-name-resolve mode.
+[36msop_mysql       |[0m 2018-05-07T17:52:37.190861Z 1 [Warning] 'user' entry 'mysql.sys@localhost' ignored in --skip-name-resolve mode.
+[36msop_mysql       |[0m 2018-05-07T17:52:37.191146Z 1 [Warning] 'db' entry 'performance_schema mysql.session@localhost' ignored in --skip-name-resolve mode.
+[36msop_mysql       |[0m 2018-05-07T17:52:37.191310Z 1 [Warning] 'db' entry 'sys mysql.sys@localhost' ignored in --skip-name-resolve mode.
+[36msop_mysql       |[0m 2018-05-07T17:52:37.191462Z 1 [Warning] 'proxies_priv' entry '@ root@localhost' ignored in --skip-name-resolve mode.
+[36msop_mysql       |[0m 2018-05-07T17:52:37.191741Z 1 [Warning] 'tables_priv' entry 'user mysql.session@localhost' ignored in --skip-name-resolve mode.
+[36msop_mysql       |[0m 2018-05-07T17:52:37.191976Z 1 [Warning] 'tables_priv' entry 'sys_config mysql.sys@localhost' ignored in --skip-name-resolve mode.
+[36msop_mysql       |[0m Database initialized
+[36msop_mysql       |[0m Initializing certificates
+[36msop_mysql       |[0m Generating a 2048 bit RSA private key
+[36msop_mysql       |[0m ...+++
+[36msop_mysql       |[0m .........+++
+[36msop_mysql       |[0m unable to write 'random state'
+[36msop_mysql       |[0m writing new private key to 'ca-key.pem'
+[36msop_mysql       |[0m -----
+[36msop_mysql       |[0m Generating a 2048 bit RSA private key
+[36msop_mysql       |[0m ..............................................................+++
+[36msop_mysql       |[0m ..+++
+[36msop_mysql       |[0m unable to write 'random state'
+[36msop_mysql       |[0m writing new private key to 'server-key.pem'
+[36msop_mysql       |[0m -----
+[36msop_mysql       |[0m Generating a 2048 bit RSA private key
+[36msop_mysql       |[0m ..+++
+[36msop_mysql       |[0m ..............................................................................................+++
+[36msop_mysql       |[0m unable to write 'random state'
+[36msop_mysql       |[0m writing new private key to 'client-key.pem'
+[36msop_mysql       |[0m -----
+[36msop_mysql       |[0m Certificates initialized
+[36msop_mysql       |[0m MySQL init process in progress...
+[36msop_mysql       |[0m 2018-05-07T17:52:39.831003Z 0 [Warning] TIMESTAMP with implicit DEFAULT value is deprecated. Please use --explicit_defaults_for_timestamp server option (see documentation for more details).
+[36msop_mysql       |[0m 2018-05-07T17:52:39.832165Z 0 [Note] mysqld (mysqld 5.7.22) starting as process 88 ...
+[36msop_mysql       |[0m 2018-05-07T17:52:39.836476Z 0 [Note] InnoDB: PUNCH HOLE support available
+[36msop_mysql       |[0m 2018-05-07T17:52:39.836826Z 0 [Note] InnoDB: Mutexes and rw_locks use GCC atomic builtins
+[36msop_mysql       |[0m 2018-05-07T17:52:39.836951Z 0 [Note] InnoDB: Uses event mutexes
+[36msop_mysql       |[0m 2018-05-07T17:52:39.837150Z 0 [Note] InnoDB: GCC builtin __atomic_thread_fence() is used for memory barrier
+[36msop_mysql       |[0m 2018-05-07T17:52:39.837300Z 0 [Note] InnoDB: Compressed tables use zlib 1.2.3
+[36msop_mysql       |[0m 2018-05-07T17:52:39.837477Z 0 [Note] InnoDB: Using Linux native AIO
+[36msop_mysql       |[0m 2018-05-07T17:52:39.837881Z 0 [Note] InnoDB: Number of pools: 1
+[36msop_mysql       |[0m 2018-05-07T17:52:39.838254Z 0 [Note] InnoDB: Using CPU crc32 instructions
+[36msop_mysql       |[0m 2018-05-07T17:52:39.839894Z 0 [Note] InnoDB: Initializing buffer pool, total size = 128M, instances = 1, chunk size = 128M
+[36msop_mysql       |[0m 2018-05-07T17:52:39.851420Z 0 [Note] InnoDB: Completed initialization of buffer pool
+[36msop_mysql       |[0m 2018-05-07T17:52:39.853355Z 0 [Note] InnoDB: If the mysqld execution user is authorized, page cleaner thread priority can be changed. See the man page of setpriority().
+[36msop_mysql       |[0m 2018-05-07T17:52:39.865283Z 0 [Note] InnoDB: Highest supported file format is Barracuda.
+[36msop_mysql       |[0m 2018-05-07T17:52:39.874420Z 0 [Note] InnoDB: Creating shared tablespace for temporary tables
+[36msop_mysql       |[0m 2018-05-07T17:52:39.874904Z 0 [Note] InnoDB: Setting file './ibtmp1' size to 12 MB. Physically writing the file full; Please wait ...
+[36msop_mysql       |[0m 2018-05-07T17:52:39.895349Z 0 [Note] InnoDB: File './ibtmp1' size is now 12 MB.
+[36msop_mysql       |[0m 2018-05-07T17:52:39.896662Z 0 [Note] InnoDB: 96 redo rollback segment(s) found. 96 redo rollback segment(s) are active.
+[36msop_mysql       |[0m 2018-05-07T17:52:39.897108Z 0 [Note] InnoDB: 32 non-redo rollback segment(s) are active.
+[36msop_mysql       |[0m 2018-05-07T17:52:39.898032Z 0 [Note] InnoDB: Waiting for purge to start
+[36msop_mysql       |[0m 2018-05-07T17:52:39.948369Z 0 [Note] InnoDB: 5.7.22 started; log sequence number 2589156
+[36msop_mysql       |[0m 2018-05-07T17:52:39.949115Z 0 [Note] Plugin 'FEDERATED' is disabled.
+[36msop_mysql       |[0m 2018-05-07T17:52:39.952100Z 0 [Note] Found ca.pem, server-cert.pem and server-key.pem in data directory. Trying to enable SSL support using them.
+[36msop_mysql       |[0m 2018-05-07T17:52:39.952580Z 0 [Warning] CA certificate ca.pem is self signed.
+[36msop_mysql       |[0m 2018-05-07T17:52:39.953020Z 0 [Note] InnoDB: Loading buffer pool(s) from /var/lib/mysql/ib_buffer_pool
+[36msop_mysql       |[0m 2018-05-07T17:52:39.955943Z 0 [Note] InnoDB: Buffer pool(s) load completed at 180507 17:52:39
+[36msop_mysql       |[0m 2018-05-07T17:52:39.958210Z 0 [Warning] Insecure configuration for --pid-file: Location '/var/run/mysqld' in the path is accessible to all OS users. Consider choosing a different directory.
+[36msop_mysql       |[0m 2018-05-07T17:52:39.959961Z 0 [Warning] 'user' entry 'root@localhost' ignored in --skip-name-resolve mode.
+[36msop_mysql       |[0m 2018-05-07T17:52:39.960234Z 0 [Warning] 'user' entry 'mysql.session@localhost' ignored in --skip-name-resolve mode.
+[36msop_mysql       |[0m 2018-05-07T17:52:39.960538Z 0 [Warning] 'user' entry 'mysql.sys@localhost' ignored in --skip-name-resolve mode.
+[36msop_mysql       |[0m 2018-05-07T17:52:39.960783Z 0 [Warning] 'db' entry 'performance_schema mysql.session@localhost' ignored in --skip-name-resolve mode.
+[36msop_mysql       |[0m 2018-05-07T17:52:39.960929Z 0 [Warning] 'db' entry 'sys mysql.sys@localhost' ignored in --skip-name-resolve mode.
+[36msop_mysql       |[0m 2018-05-07T17:52:39.961102Z 0 [Warning] 'proxies_priv' entry '@ root@localhost' ignored in --skip-name-resolve mode.
+[36msop_mysql       |[0m 2018-05-07T17:52:39.962655Z 0 [Warning] 'tables_priv' entry 'user mysql.session@localhost' ignored in --skip-name-resolve mode.
+[36msop_mysql       |[0m 2018-05-07T17:52:39.962889Z 0 [Warning] 'tables_priv' entry 'sys_config mysql.sys@localhost' ignored in --skip-name-resolve mode.
+[36msop_mysql       |[0m 2018-05-07T17:52:39.969320Z 0 [Note] Event Scheduler: Loaded 0 events
+[36msop_mysql       |[0m 2018-05-07T17:52:39.969862Z 0 [Note] mysqld: ready for connections.
+[36msop_mysql       |[0m Version: '5.7.22'  socket: '/var/run/mysqld/mysqld.sock'  port: 0  MySQL Community Server (GPL)
+[36msop_mysql       |[0m Warning: Unable to load '/usr/share/zoneinfo/iso3166.tab' as time zone. Skipping it.
+[36msop_mysql       |[0m Warning: Unable to load '/usr/share/zoneinfo/leap-seconds.list' as time zone. Skipping it.
+[36msop_mysql       |[0m Warning: Unable to load '/usr/share/zoneinfo/zone.tab' as time zone. Skipping it.
+[36msop_mysql       |[0m Warning: Unable to load '/usr/share/zoneinfo/zone1970.tab' as time zone. Skipping it.
+[36msop_mysql       |[0m 2018-05-07T17:52:43.392415Z 4 [Warning] 'user' entry 'root@localhost' ignored in --skip-name-resolve mode.
+[36msop_mysql       |[0m 2018-05-07T17:52:43.392678Z 4 [Warning] 'user' entry 'mysql.session@localhost' ignored in --skip-name-resolve mode.
+[36msop_mysql       |[0m 2018-05-07T17:52:43.392957Z 4 [Warning] 'user' entry 'mysql.sys@localhost' ignored in --skip-name-resolve mode.
+[36msop_mysql       |[0m 2018-05-07T17:52:43.393115Z 4 [Warning] 'db' entry 'performance_schema mysql.session@localhost' ignored in --skip-name-resolve mode.
+[36msop_mysql       |[0m 2018-05-07T17:52:43.393323Z 4 [Warning] 'db' entry 'sys mysql.sys@localhost' ignored in --skip-name-resolve mode.
+[36msop_mysql       |[0m 2018-05-07T17:52:43.393633Z 4 [Warning] 'proxies_priv' entry '@ root@localhost' ignored in --skip-name-resolve mode.
+[36msop_mysql       |[0m 2018-05-07T17:52:43.393925Z 4 [Warning] 'tables_priv' entry 'user mysql.session@localhost' ignored in --skip-name-resolve mode.
+[36msop_mysql       |[0m 2018-05-07T17:52:43.394059Z 4 [Warning] 'tables_priv' entry 'sys_config mysql.sys@localhost' ignored in --skip-name-resolve mode.
+[36msop_mysql       |[0m mysql: [Warning] Using a password on the command line interface can be insecure.
+[36msop_mysql       |[0m 
+[36msop_mysql       |[0m 2018-05-07T17:52:43.405308Z 0 [Note] Giving 0 client threads a chance to die gracefully
+[36msop_mysql       |[0m 2018-05-07T17:52:43.405535Z 0 [Note] Shutting down slave threads
+[36msop_mysql       |[0m 2018-05-07T17:52:43.405736Z 0 [Note] Forcefully disconnecting 0 remaining clients
+[36msop_mysql       |[0m 2018-05-07T17:52:43.406135Z 0 [Note] Event Scheduler: Purging the queue. 0 events
+[36msop_mysql       |[0m 2018-05-07T17:52:43.406412Z 0 [Note] Binlog end
+[36msop_mysql       |[0m 2018-05-07T17:52:43.407320Z 0 [Note] Shutting down plugin 'ngram'
+[36msop_mysql       |[0m 2018-05-07T17:52:43.407528Z 0 [Note] Shutting down plugin 'partition'
+[36msop_mysql       |[0m 2018-05-07T17:52:43.407749Z 0 [Note] Shutting down plugin 'BLACKHOLE'
+[36msop_mysql       |[0m 2018-05-07T17:52:43.407949Z 0 [Note] Shutting down plugin 'ARCHIVE'
+[36msop_mysql       |[0m 2018-05-07T17:52:43.408136Z 0 [Note] Shutting down plugin 'PERFORMANCE_SCHEMA'
+[36msop_mysql       |[0m 2018-05-07T17:52:43.408370Z 0 [Note] Shutting down plugin 'MRG_MYISAM'
+[36msop_mysql       |[0m 2018-05-07T17:52:43.408547Z 0 [Note] Shutting down plugin 'MyISAM'
+[36msop_mysql       |[0m 2018-05-07T17:52:43.408836Z 0 [Note] Shutting down plugin 'INNODB_SYS_VIRTUAL'
+[36msop_mysql       |[0m 2018-05-07T17:52:43.409013Z 0 [Note] Shutting down plugin 'INNODB_SYS_DATAFILES'
+[36msop_mysql       |[0m 2018-05-07T17:52:43.409297Z 0 [Note] Shutting down plugin 'INNODB_SYS_TABLESPACES'
+[36msop_mysql       |[0m 2018-05-07T17:52:43.409475Z 0 [Note] Shutting down plugin 'INNODB_SYS_FOREIGN_COLS'
+[36msop_mysql       |[0m 2018-05-07T17:52:43.409695Z 0 [Note] Shutting down plugin 'INNODB_SYS_FOREIGN'
+[36msop_mysql       |[0m 2018-05-07T17:52:43.409890Z 0 [Note] Shutting down plugin 'INNODB_SYS_FIELDS'
+[36msop_mysql       |[0m 2018-05-07T17:52:43.410111Z 0 [Note] Shutting down plugin 'INNODB_SYS_COLUMNS'
+[36msop_mysql       |[0m 2018-05-07T17:52:43.410286Z 0 [Note] Shutting down plugin 'INNODB_SYS_INDEXES'
+[36msop_mysql       |[0m 2018-05-07T17:52:43.410573Z 0 [Note] Shutting down plugin 'INNODB_SYS_TABLESTATS'
+[36msop_mysql       |[0m 2018-05-07T17:52:43.410704Z 0 [Note] Shutting down plugin 'INNODB_SYS_TABLES'
+[36msop_mysql       |[0m 2018-05-07T17:52:43.410900Z 0 [Note] Shutting down plugin 'INNODB_FT_INDEX_TABLE'
+[36msop_mysql       |[0m 2018-05-07T17:52:43.411086Z 0 [Note] Shutting down plugin 'INNODB_FT_INDEX_CACHE'
+[36msop_mysql       |[0m 2018-05-07T17:52:43.411293Z 0 [Note] Shutting down plugin 'INNODB_FT_CONFIG'
+[36msop_mysql       |[0m 2018-05-07T17:52:43.411469Z 0 [Note] Shutting down plugin 'INNODB_FT_BEING_DELETED'
+[36msop_mysql       |[0m 2018-05-07T17:52:43.411691Z 0 [Note] Shutting down plugin 'INNODB_FT_DELETED'
+[36msop_mysql       |[0m 2018-05-07T17:52:43.411864Z 0 [Note] Shutting down plugin 'INNODB_FT_DEFAULT_STOPWORD'
+[36msop_mysql       |[0m 2018-05-07T17:52:43.412082Z 0 [Note] Shutting down plugin 'INNODB_METRICS'
+[36msop_mysql       |[0m 2018-05-07T17:52:43.412230Z 0 [Note] Shutting down plugin 'INNODB_TEMP_TABLE_INFO'
+[36msop_mysql       |[0m 2018-05-07T17:52:43.412478Z 0 [Note] Shutting down plugin 'INNODB_BUFFER_POOL_STATS'
+[36msop_mysql       |[0m 2018-05-07T17:52:43.412738Z 0 [Note] Shutting down plugin 'INNODB_BUFFER_PAGE_LRU'
+[36msop_mysql       |[0m 2018-05-07T17:52:43.412925Z 0 [Note] Shutting down plugin 'INNODB_BUFFER_PAGE'
+[36msop_mysql       |[0m 2018-05-07T17:52:43.413200Z 0 [Note] Shutting down plugin 'INNODB_CMP_PER_INDEX_RESET'
+[36msop_mysql       |[0m 2018-05-07T17:52:43.413575Z 0 [Note] Shutting down plugin 'INNODB_CMP_PER_INDEX'
+[36msop_mysql       |[0m 2018-05-07T17:52:43.413618Z 0 [Note] Shutting down plugin 'INNODB_CMPMEM_RESET'
+[36msop_mysql       |[0m 2018-05-07T17:52:43.413635Z 0 [Note] Shutting down plugin 'INNODB_CMPMEM'
+[36msop_mysql       |[0m 2018-05-07T17:52:43.413651Z 0 [Note] Shutting down plugin 'INNODB_CMP_RESET'
+[36msop_mysql       |[0m 2018-05-07T17:52:43.413665Z 0 [Note] Shutting down plugin 'INNODB_CMP'
+[36msop_mysql       |[0m 2018-05-07T17:52:43.413680Z 0 [Note] Shutting down plugin 'INNODB_LOCK_WAITS'
+[36msop_mysql       |[0m 2018-05-07T17:52:43.413694Z 0 [Note] Shutting down plugin 'INNODB_LOCKS'
+[36msop_mysql       |[0m 2018-05-07T17:52:43.413709Z 0 [Note] Shutting down plugin 'INNODB_TRX'
+[36msop_mysql       |[0m 2018-05-07T17:52:43.413724Z 0 [Note] Shutting down plugin 'InnoDB'
+[36msop_mysql       |[0m 2018-05-07T17:52:43.414316Z 0 [Note] InnoDB: FTS optimize thread exiting.
+[36msop_mysql       |[0m 2018-05-07T17:52:43.414747Z 0 [Note] InnoDB: Starting shutdown...
+[36msop_mysql       |[0m 2018-05-07T17:52:43.515347Z 0 [Note] InnoDB: Dumping buffer pool(s) to /var/lib/mysql/ib_buffer_pool
+[36msop_mysql       |[0m 2018-05-07T17:52:43.516312Z 0 [Note] InnoDB: Buffer pool(s) dump completed at 180507 17:52:43
+[36msop_mysql       |[0m 2018-05-07T17:52:44.835687Z 0 [Note] InnoDB: Shutdown completed; log sequence number 12356743
+[36msop_mysql       |[0m 2018-05-07T17:52:44.838890Z 0 [Note] InnoDB: Removed temporary tablespace data file: "ibtmp1"
+[36msop_mysql       |[0m 2018-05-07T17:52:44.839163Z 0 [Note] Shutting down plugin 'MEMORY'
+[36msop_mysql       |[0m 2018-05-07T17:52:44.839377Z 0 [Note] Shutting down plugin 'CSV'
+[36msop_mysql       |[0m 2018-05-07T17:52:44.839609Z 0 [Note] Shutting down plugin 'sha256_password'
+[36msop_mysql       |[0m 2018-05-07T17:52:44.839737Z 0 [Note] Shutting down plugin 'mysql_native_password'
+[36msop_mysql       |[0m 2018-05-07T17:52:44.840056Z 0 [Note] Shutting down plugin 'binlog'
+[36msop_mysql       |[0m 2018-05-07T17:52:44.840633Z 0 [Note] mysqld: Shutdown complete
+[36msop_mysql       |[0m 
+[36msop_mysql       |[0m 
+[36msop_mysql       |[0m MySQL init process done. Ready for start up.
+[36msop_mysql       |[0m 
+[36msop_mysql       |[0m 2018-05-07T17:52:45.064392Z 0 [Warning] TIMESTAMP with implicit DEFAULT value is deprecated. Please use --explicit_defaults_for_timestamp server option (see documentation for more details).
+[36msop_mysql       |[0m 2018-05-07T17:52:45.066388Z 0 [Note] mysqld (mysqld 5.7.22) starting as process 1 ...
+[36msop_mysql       |[0m 2018-05-07T17:52:45.072911Z 0 [Note] InnoDB: PUNCH HOLE support available
+[36msop_mysql       |[0m 2018-05-07T17:52:45.073545Z 0 [Note] InnoDB: Mutexes and rw_locks use GCC atomic builtins
+[36msop_mysql       |[0m 2018-05-07T17:52:45.073822Z 0 [Note] InnoDB: Uses event mutexes
+[36msop_mysql       |[0m 2018-05-07T17:52:45.074204Z 0 [Note] InnoDB: GCC builtin __atomic_thread_fence() is used for memory barrier
+[36msop_mysql       |[0m 2018-05-07T17:52:45.074754Z 0 [Note] InnoDB: Compressed tables use zlib 1.2.3
+[36msop_mysql       |[0m 2018-05-07T17:52:45.075527Z 0 [Note] InnoDB: Using Linux native AIO
+[36msop_mysql       |[0m 2018-05-07T17:52:45.076235Z 0 [Note] InnoDB: Number of pools: 1
+[36msop_mysql       |[0m 2018-05-07T17:52:45.076859Z 0 [Note] InnoDB: Using CPU crc32 instructions
+[36msop_mysql       |[0m 2018-05-07T17:52:45.079487Z 0 [Note] InnoDB: Initializing buffer pool, total size = 128M, instances = 1, chunk size = 128M
+[36msop_mysql       |[0m 2018-05-07T17:52:45.093522Z 0 [Note] InnoDB: Completed initialization of buffer pool
+[36msop_mysql       |[0m 2018-05-07T17:52:45.095109Z 0 [Note] InnoDB: If the mysqld execution user is authorized, page cleaner thread priority can be changed. See the man page of setpriority().
+[36msop_mysql       |[0m 2018-05-07T17:52:45.107110Z 0 [Note] InnoDB: Highest supported file format is Barracuda.
+[36msop_mysql       |[0m 2018-05-07T17:52:45.120747Z 0 [Note] InnoDB: Creating shared tablespace for temporary tables
+[36msop_mysql       |[0m 2018-05-07T17:52:45.121168Z 0 [Note] InnoDB: Setting file './ibtmp1' size to 12 MB. Physically writing the file full; Please wait ...
+[36msop_mysql       |[0m 2018-05-07T17:52:45.158617Z 0 [Note] InnoDB: File './ibtmp1' size is now 12 MB.
+[36msop_mysql       |[0m 2018-05-07T17:52:45.159581Z 0 [Note] InnoDB: 96 redo rollback segment(s) found. 96 redo rollback segment(s) are active.
+[36msop_mysql       |[0m 2018-05-07T17:52:45.159809Z 0 [Note] InnoDB: 32 non-redo rollback segment(s) are active.
+[36msop_mysql       |[0m 2018-05-07T17:52:45.160392Z 0 [Note] InnoDB: Waiting for purge to start
+[36msop_mysql       |[0m 2018-05-07T17:52:45.210830Z 0 [Note] InnoDB: 5.7.22 started; log sequence number 12356743
+[36msop_mysql       |[0m 2018-05-07T17:52:45.211661Z 0 [Note] Plugin 'FEDERATED' is disabled.
+[36msop_mysql       |[0m 2018-05-07T17:52:45.214512Z 0 [Note] Found ca.pem, server-cert.pem and server-key.pem in data directory. Trying to enable SSL support using them.
+[36msop_mysql       |[0m 2018-05-07T17:52:45.215127Z 0 [Warning] CA certificate ca.pem is self signed.
+[36msop_mysql       |[0m 2018-05-07T17:52:45.217947Z 0 [Note] Server hostname (bind-address): '*'; port: 3306
+[36msop_mysql       |[0m 2018-05-07T17:52:45.218400Z 0 [Note] IPv6 is available.
+[36msop_mysql       |[0m 2018-05-07T17:52:45.218358Z 0 [Note] InnoDB: Loading buffer pool(s) from /var/lib/mysql/ib_buffer_pool
+[36msop_mysql       |[0m 2018-05-07T17:52:45.221067Z 0 [Note] InnoDB: Buffer pool(s) load completed at 180507 17:52:45
+[36msop_mysql       |[0m 2018-05-07T17:52:45.221530Z 0 [Note]   - '::' resolves to '::';
+[36msop_mysql       |[0m 2018-05-07T17:52:45.221827Z 0 [Note] Server socket created on IP: '::'.
+[36msop_mysql       |[0m 2018-05-07T17:52:45.225868Z 0 [Warning] Insecure configuration for --pid-file: Location '/var/run/mysqld' in the path is accessible to all OS users. Consider choosing a different directory.
+[36msop_mysql       |[0m 2018-05-07T17:52:45.227223Z 0 [Warning] 'user' entry 'root@localhost' ignored in --skip-name-resolve mode.
+[36msop_mysql       |[0m 2018-05-07T17:52:45.227572Z 0 [Warning] 'user' entry 'mysql.session@localhost' ignored in --skip-name-resolve mode.
+[36msop_mysql       |[0m 2018-05-07T17:52:45.227760Z 0 [Warning] 'user' entry 'mysql.sys@localhost' ignored in --skip-name-resolve mode.
+[36msop_mysql       |[0m 2018-05-07T17:52:45.228066Z 0 [Warning] 'db' entry 'performance_schema mysql.session@localhost' ignored in --skip-name-resolve mode.
+[36msop_mysql       |[0m 2018-05-07T17:52:45.228203Z 0 [Warning] 'db' entry 'sys mysql.sys@localhost' ignored in --skip-name-resolve mode.
+[36msop_mysql       |[0m 2018-05-07T17:52:45.228447Z 0 [Warning] 'proxies_priv' entry '@ root@localhost' ignored in --skip-name-resolve mode.
+[36msop_mysql       |[0m 2018-05-07T17:52:45.231501Z 0 [Warning] 'tables_priv' entry 'user mysql.session@localhost' ignored in --skip-name-resolve mode.
+[36msop_mysql       |[0m 2018-05-07T17:52:45.231857Z 0 [Warning] 'tables_priv' entry 'sys_config mysql.sys@localhost' ignored in --skip-name-resolve mode.
+[36msop_mysql       |[0m 2018-05-07T17:52:45.239453Z 0 [Note] Event Scheduler: Loaded 0 events
+[36msop_mysql       |[0m 2018-05-07T17:52:45.239961Z 0 [Note] mysqld: ready for connections.
+[36msop_mysql       |[0m Version: '5.7.22'  socket: '/var/run/mysqld/mysqld.sock'  port: 3306  MySQL Community Server (GPL)
+[36msop_mysql       |[0m 2018-05-07T17:58:33.646134Z 0 [Note] Giving 0 client threads a chance to die gracefully
+[36msop_mysql       |[0m 2018-05-07T17:58:33.646157Z 0 [Note] Shutting down slave threads
+[36msop_mysql       |[0m 2018-05-07T17:58:33.646162Z 0 [Note] Forcefully disconnecting 0 remaining clients
+[36msop_mysql       |[0m 2018-05-07T17:58:33.646174Z 0 [Note] Event Scheduler: Purging the queue. 0 events
+[36msop_mysql       |[0m 2018-05-07T17:58:33.646212Z 0 [Note] Binlog end
+[36msop_mysql       |[0m 2018-05-07T17:58:33.646632Z 0 [Note] Shutting down plugin 'ngram'
+[36msop_mysql       |[0m 2018-05-07T17:58:33.646643Z 0 [Note] Shutting down plugin 'partition'
+[36msop_mysql       |[0m 2018-05-07T17:58:33.646647Z 0 [Note] Shutting down plugin 'BLACKHOLE'
+[36msop_mysql       |[0m 2018-05-07T17:58:33.646651Z 0 [Note] Shutting down plugin 'ARCHIVE'
+[36msop_mysql       |[0m 2018-05-07T17:58:33.646654Z 0 [Note] Shutting down plugin 'PERFORMANCE_SCHEMA'
+[36msop_mysql       |[0m 2018-05-07T17:58:33.646711Z 0 [Note] Shutting down plugin 'MRG_MYISAM'
+[36msop_mysql       |[0m 2018-05-07T17:58:33.646717Z 0 [Note] Shutting down plugin 'MyISAM'
+[36msop_mysql       |[0m 2018-05-07T17:58:33.646727Z 0 [Note] Shutting down plugin 'INNODB_SYS_VIRTUAL'
+[36msop_mysql       |[0m 2018-05-07T17:58:33.646733Z 0 [Note] Shutting down plugin 'INNODB_SYS_DATAFILES'
+[36msop_mysql       |[0m 2018-05-07T17:58:33.646737Z 0 [Note] Shutting down plugin 'INNODB_SYS_TABLESPACES'
+[36msop_mysql       |[0m 2018-05-07T17:58:33.646740Z 0 [Note] Shutting down plugin 'INNODB_SYS_FOREIGN_COLS'
+[36msop_mysql       |[0m 2018-05-07T17:58:33.646744Z 0 [Note] Shutting down plugin 'INNODB_SYS_FOREIGN'
+[36msop_mysql       |[0m 2018-05-07T17:58:33.646748Z 0 [Note] Shutting down plugin 'INNODB_SYS_FIELDS'
+[36msop_mysql       |[0m 2018-05-07T17:58:33.646752Z 0 [Note] Shutting down plugin 'INNODB_SYS_COLUMNS'
+[36msop_mysql       |[0m 2018-05-07T17:58:33.646755Z 0 [Note] Shutting down plugin 'INNODB_SYS_INDEXES'
+[36msop_mysql       |[0m 2018-05-07T17:58:33.646758Z 0 [Note] Shutting down plugin 'INNODB_SYS_TABLESTATS'
+[36msop_mysql       |[0m 2018-05-07T17:58:33.646761Z 0 [Note] Shutting down plugin 'INNODB_SYS_TABLES'
+[36msop_mysql       |[0m 2018-05-07T17:58:33.646764Z 0 [Note] Shutting down plugin 'INNODB_FT_INDEX_TABLE'
+[36msop_mysql       |[0m 2018-05-07T17:58:33.646766Z 0 [Note] Shutting down plugin 'INNODB_FT_INDEX_CACHE'
+[36msop_mysql       |[0m 2018-05-07T17:58:33.646769Z 0 [Note] Shutting down plugin 'INNODB_FT_CONFIG'
+[36msop_mysql       |[0m 2018-05-07T17:58:33.646772Z 0 [Note] Shutting down plugin 'INNODB_FT_BEING_DELETED'
+[36msop_mysql       |[0m 2018-05-07T17:58:33.646775Z 0 [Note] Shutting down plugin 'INNODB_FT_DELETED'
+[36msop_mysql       |[0m 2018-05-07T17:58:33.646778Z 0 [Note] Shutting down plugin 'INNODB_FT_DEFAULT_STOPWORD'
+[36msop_mysql       |[0m 2018-05-07T17:58:33.646782Z 0 [Note] Shutting down plugin 'INNODB_METRICS'
+[36msop_mysql       |[0m 2018-05-07T17:58:33.646785Z 0 [Note] Shutting down plugin 'INNODB_TEMP_TABLE_INFO'
+[36msop_mysql       |[0m 2018-05-07T17:58:33.646788Z 0 [Note] Shutting down plugin 'INNODB_BUFFER_POOL_STATS'
+[36msop_mysql       |[0m 2018-05-07T17:58:33.646790Z 0 [Note] Shutting down plugin 'INNODB_BUFFER_PAGE_LRU'
+[36msop_mysql       |[0m 2018-05-07T17:58:33.646793Z 0 [Note] Shutting down plugin 'INNODB_BUFFER_PAGE'
+[36msop_mysql       |[0m 2018-05-07T17:58:33.646796Z 0 [Note] Shutting down plugin 'INNODB_CMP_PER_INDEX_RESET'
+[36msop_mysql       |[0m 2018-05-07T17:58:33.646799Z 0 [Note] Shutting down plugin 'INNODB_CMP_PER_INDEX'
+[36msop_mysql       |[0m 2018-05-07T17:58:33.646803Z 0 [Note] Shutting down plugin 'INNODB_CMPMEM_RESET'
+[36msop_mysql       |[0m 2018-05-07T17:58:33.646806Z 0 [Note] Shutting down plugin 'INNODB_CMPMEM'
+[36msop_mysql       |[0m 2018-05-07T17:58:33.646810Z 0 [Note] Shutting down plugin 'INNODB_CMP_RESET'
+[36msop_mysql       |[0m 2018-05-07T17:58:33.646813Z 0 [Note] Shutting down plugin 'INNODB_CMP'
+[36msop_mysql       |[0m 2018-05-07T17:58:33.646817Z 0 [Note] Shutting down plugin 'INNODB_LOCK_WAITS'
+[36msop_mysql       |[0m 2018-05-07T17:58:33.646820Z 0 [Note] Shutting down plugin 'INNODB_LOCKS'
+[36msop_mysql       |[0m 2018-05-07T17:58:33.646824Z 0 [Note] Shutting down plugin 'INNODB_TRX'
+[36msop_mysql       |[0m 2018-05-07T17:58:33.646827Z 0 [Note] Shutting down plugin 'InnoDB'
+[36msop_mysql       |[0m 2018-05-07T17:58:33.646885Z 0 [Note] InnoDB: FTS optimize thread exiting.
+[36msop_mysql       |[0m 2018-05-07T17:58:33.647335Z 0 [Note] InnoDB: Starting shutdown...
+[36msop_mysql       |[0m 2018-05-07T17:58:33.748090Z 0 [Note] InnoDB: Dumping buffer pool(s) to /var/lib/mysql/ib_buffer_pool
+[36msop_mysql       |[0m 2018-05-07T17:58:33.748284Z 0 [Note] InnoDB: Buffer pool(s) dump completed at 180507 17:58:33
+[36msop_mysql       |[0m 2018-05-07T17:58:35.179306Z 0 [Note] InnoDB: Shutdown completed; log sequence number 12356771
+[36msop_mysql       |[0m 2018-05-07T17:58:35.182428Z 0 [Note] InnoDB: Removed temporary tablespace data file: "ibtmp1"
+[36msop_mysql       |[0m 2018-05-07T17:58:35.182629Z 0 [Note] Shutting down plugin 'MEMORY'
+[36msop_mysql       |[0m 2018-05-07T17:58:35.182687Z 0 [Note] Shutting down plugin 'CSV'
+[36msop_mysql       |[0m 2018-05-07T17:58:35.182725Z 0 [Note] Shutting down plugin 'sha256_password'
+[36msop_mysql       |[0m 2018-05-07T17:58:35.182760Z 0 [Note] Shutting down plugin 'mysql_native_password'
+[36msop_mysql       |[0m 2018-05-07T17:58:35.183121Z 0 [Note] Shutting down plugin 'binlog'
+[36msop_mysql       |[0m 2018-05-07T17:58:35.183726Z 0 [Note] mysqld: Shutdown complete
+[36msop_mysql       |[0m 
+[36msop_mysql       |[0m 2018-05-07T17:59:07.573444Z 0 [Warning] TIMESTAMP with implicit DEFAULT value is deprecated. Please use --explicit_defaults_for_timestamp server option (see documentation for more details).
+[36msop_mysql       |[0m 2018-05-07T17:59:07.574098Z 0 [Note] mysqld (mysqld 5.7.22) starting as process 1 ...
+[36msop_mysql       |[0m 2018-05-07T17:59:07.589154Z 0 [Note] InnoDB: PUNCH HOLE support available
+[36msop_mysql       |[0m 2018-05-07T17:59:07.589176Z 0 [Note] InnoDB: Mutexes and rw_locks use GCC atomic builtins
+[36msop_mysql       |[0m 2018-05-07T17:59:07.589181Z 0 [Note] InnoDB: Uses event mutexes
+[36msop_mysql       |[0m 2018-05-07T17:59:07.589185Z 0 [Note] InnoDB: GCC builtin __atomic_thread_fence() is used for memory barrier
+[36msop_mysql       |[0m 2018-05-07T17:59:07.589189Z 0 [Note] InnoDB: Compressed tables use zlib 1.2.3
+[36msop_mysql       |[0m 2018-05-07T17:59:07.589193Z 0 [Note] InnoDB: Using Linux native AIO
+[36msop_mysql       |[0m 2018-05-07T17:59:07.589416Z 0 [Note] InnoDB: Number of pools: 1
+[36msop_mysql       |[0m 2018-05-07T17:59:07.589515Z 0 [Note] InnoDB: Using CPU crc32 instructions
+[36msop_mysql       |[0m 2018-05-07T17:59:07.597776Z 0 [Note] InnoDB: Initializing buffer pool, total size = 128M, instances = 1, chunk size = 128M
+[36msop_mysql       |[0m 2018-05-07T17:59:07.621381Z 0 [Note] InnoDB: Completed initialization of buffer pool
+[36msop_mysql       |[0m 2018-05-07T17:59:07.630987Z 0 [Note] InnoDB: If the mysqld execution user is authorized, page cleaner thread priority can be changed. See the man page of setpriority().
+[36msop_mysql       |[0m 2018-05-07T17:59:07.639121Z 0 [Note] InnoDB: Highest supported file format is Barracuda.
+[36msop_mysql       |[0m 2018-05-07T17:59:07.649596Z 0 [Note] InnoDB: Creating shared tablespace for temporary tables
+[36msop_mysql       |[0m 2018-05-07T17:59:07.649982Z 0 [Note] InnoDB: Setting file './ibtmp1' size to 12 MB. Physically writing the file full; Please wait ...
+[36msop_mysql       |[0m 2018-05-07T17:59:07.688287Z 0 [Note] InnoDB: File './ibtmp1' size is now 12 MB.
+[36msop_mysql       |[0m 2018-05-07T17:59:07.690067Z 0 [Note] InnoDB: 96 redo rollback segment(s) found. 96 redo rollback segment(s) are active.
+[36msop_mysql       |[0m 2018-05-07T17:59:07.690453Z 0 [Note] InnoDB: 32 non-redo rollback segment(s) are active.
+[36msop_mysql       |[0m 2018-05-07T17:59:07.691660Z 0 [Note] InnoDB: Waiting for purge to start
+[36msop_mysql       |[0m 2018-05-07T17:59:07.743326Z 0 [Note] InnoDB: 5.7.22 started; log sequence number 12356771
+[36msop_mysql       |[0m 2018-05-07T17:59:07.745433Z 0 [Note] Plugin 'FEDERATED' is disabled.
+[36msop_mysql       |[0m 2018-05-07T17:59:07.757975Z 0 [Note] Found ca.pem, server-cert.pem and server-key.pem in data directory. Trying to enable SSL support using them.
+[36msop_mysql       |[0m 2018-05-07T17:59:07.759195Z 0 [Note] InnoDB: Loading buffer pool(s) from /var/lib/mysql/ib_buffer_pool
+[36msop_mysql       |[0m 2018-05-07T17:59:07.762908Z 0 [Warning] CA certificate ca.pem is self signed.
+[36msop_mysql       |[0m 2018-05-07T17:59:07.773686Z 0 [Note] Server hostname (bind-address): '*'; port: 3306
+[36msop_mysql       |[0m 2018-05-07T17:59:07.774724Z 0 [Note] IPv6 is available.
+[36msop_mysql       |[0m 2018-05-07T17:59:07.776066Z 0 [Note]   - '::' resolves to '::';
+[36msop_mysql       |[0m 2018-05-07T17:59:07.777102Z 0 [Note] Server socket created on IP: '::'.
+[36msop_mysql       |[0m 2018-05-07T17:59:07.778080Z 0 [Note] InnoDB: Buffer pool(s) load completed at 180507 17:59:07
+[36msop_mysql       |[0m 2018-05-07T17:59:07.782311Z 0 [Warning] Insecure configuration for --pid-file: Location '/var/run/mysqld' in the path is accessible to all OS users. Consider choosing a different directory.
+[36msop_mysql       |[0m 2018-05-07T17:59:07.783476Z 0 [Warning] 'user' entry 'root@localhost' ignored in --skip-name-resolve mode.
+[36msop_mysql       |[0m 2018-05-07T17:59:07.783692Z 0 [Warning] 'user' entry 'mysql.session@localhost' ignored in --skip-name-resolve mode.
+[36msop_mysql       |[0m 2018-05-07T17:59:07.783907Z 0 [Warning] 'user' entry 'mysql.sys@localhost' ignored in --skip-name-resolve mode.
+[36msop_mysql       |[0m 2018-05-07T17:59:07.784099Z 0 [Warning] 'db' entry 'performance_schema mysql.session@localhost' ignored in --skip-name-resolve mode.
+[36msop_mysql       |[0m 2018-05-07T17:59:07.784250Z 0 [Warning] 'db' entry 'sys mysql.sys@localhost' ignored in --skip-name-resolve mode.
+[36msop_mysql       |[0m 2018-05-07T17:59:07.784507Z 0 [Warning] 'proxies_priv' entry '@ root@localhost' ignored in --skip-name-resolve mode.
+[36msop_mysql       |[0m 2018-05-07T17:59:07.788044Z 0 [Warning] 'tables_priv' entry 'user mysql.session@localhost' ignored in --skip-name-resolve mode.
+[36msop_mysql       |[0m 2018-05-07T17:59:07.788281Z 0 [Warning] 'tables_priv' entry 'sys_config mysql.sys@localhost' ignored in --skip-name-resolve mode.
+[36msop_mysql       |[0m 2018-05-07T17:59:07.797525Z 0 [Note] Event Scheduler: Loaded 0 events
+[36msop_mysql       |[0m 2018-05-07T17:59:07.798239Z 0 [Note] mysqld: ready for connections.
+[36msop_mysql       |[0m Version: '5.7.22'  socket: '/var/run/mysqld/mysqld.sock'  port: 3306  MySQL Community Server (GPL)
+[36msop_mysql       |[0m 2018-05-07T18:12:15.658215Z 11 [Note] Aborted connection 11 to db: 'empi' user: 'root' host: '172.18.0.1' (Got an error reading communication packets)
+[36msop_mysql       |[0m 2018-05-07T18:12:15.658673Z 10 [Note] Aborted connection 10 to db: 'empi' user: 'root' host: '172.18.0.1' (Got an error reading communication packets)
+[36msop_mysql       |[0m 2018-05-07T18:12:15.658864Z 9 [Note] Aborted connection 9 to db: 'empi' user: 'root' host: '172.18.0.1' (Got an error reading communication packets)
+[36msop_mysql       |[0m 2018-05-07T18:12:15.659025Z 8 [Note] Aborted connection 8 to db: 'empi' user: 'root' host: '172.18.0.1' (Got an error reading communication packets)
+[36msop_mysql       |[0m 2018-05-07T18:12:15.659249Z 7 [Note] Aborted connection 7 to db: 'empi' user: 'root' host: '172.18.0.1' (Got an error reading communication packets)
+[36msop_mysql       |[0m 2018-05-07T18:12:15.659414Z 6 [Note] Aborted connection 6 to db: 'empi' user: 'root' host: '172.18.0.1' (Got an error reading communication packets)
+[36msop_mysql       |[0m 2018-05-07T18:12:15.659633Z 5 [Note] Aborted connection 5 to db: 'empi' user: 'root' host: '172.18.0.1' (Got an error reading communication packets)
+[36msop_mysql       |[0m 2018-05-07T18:12:15.659803Z 4 [Note] Aborted connection 4 to db: 'empi' user: 'root' host: '172.18.0.1' (Got an error reading communication packets)
+[36msop_mysql       |[0m 2018-05-07T18:12:15.659963Z 3 [Note] Aborted connection 3 to db: 'empi' user: 'root' host: '172.18.0.1' (Got an error reading communication packets)
+[36msop_mysql       |[0m 2018-05-07T18:12:15.660126Z 2 [Note] Aborted connection 2 to db: 'empi' user: 'root' host: '172.18.0.1' (Got an error reading communication packets)
+[36msop_mysql       |[0m 2018-05-07T19:07:54.347178Z 51 [Note] Aborted connection 51 to db: 'empi' user: 'root' host: '172.18.0.1' (Got an error reading communication packets)
+[36msop_mysql       |[0m 2018-05-07T19:07:54.347770Z 50 [Note] Aborted connection 50 to db: 'empi' user: 'root' host: '172.18.0.1' (Got an error reading communication packets)
+[36msop_mysql       |[0m 2018-05-07T19:07:54.348365Z 49 [Note] Aborted connection 49 to db: 'empi' user: 'root' host: '172.18.0.1' (Got an error reading communication packets)
+[36msop_mysql       |[0m 2018-05-07T19:07:54.348597Z 48 [Note] Aborted connection 48 to db: 'empi' user: 'root' host: '172.18.0.1' (Got an error reading communication packets)
+[36msop_mysql       |[0m 2018-05-07T19:07:54.348797Z 47 [Note] Aborted connection 47 to db: 'empi' user: 'root' host: '172.18.0.1' (Got an error reading communication packets)
+[36msop_mysql       |[0m 2018-05-07T19:07:54.349170Z 46 [Note] Aborted connection 46 to db: 'empi' user: 'root' host: '172.18.0.1' (Got an error reading communication packets)
+[36msop_mysql       |[0m 2018-05-07T19:07:54.349396Z 45 [Note] Aborted connection 45 to db: 'empi' user: 'root' host: '172.18.0.1' (Got an error reading communication packets)
+[36msop_mysql       |[0m 2018-05-07T19:07:54.349592Z 44 [Note] Aborted connection 44 to db: 'empi' user: 'root' host: '172.18.0.1' (Got an error reading communication packets)
+[36msop_mysql       |[0m 2018-05-07T19:07:54.349800Z 43 [Note] Aborted connection 43 to db: 'empi' user: 'root' host: '172.18.0.1' (Got an error reading communication packets)
+[36msop_mysql       |[0m 2018-05-07T19:07:54.349989Z 42 [Note] Aborted connection 42 to db: 'empi' user: 'root' host: '172.18.0.1' (Got an error reading communication packets)
+[33msop_springdocker |[0m #####Starting up springdocker with consul template project####
+[33msop_springdocker |[0m Listening for transport dt_socket at address: 5005
+[33msop_springdocker |[0m 2018-05-07 19:08:20.283  INFO 6 --- [           main] s.c.a.AnnotationConfigApplicationContext : Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@4fb0f2b9: startup date [Mon May 07 19:08:20 UTC 2018]; root of context hierarchy
+[33msop_springdocker |[0m 2018-05-07 19:08:22.356  INFO 6 --- [           main] f.a.AutowiredAnnotationBeanPostProcessor : JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+[33msop_springdocker |[0m 2018-05-07 19:08:22.814  INFO 6 --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'configurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$1724343c] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[33msop_springdocker |[0m 
+[33msop_springdocker |[0m   .   ____          _            __ _ _
+[33msop_springdocker |[0m  /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+[33msop_springdocker |[0m ( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+[33msop_springdocker |[0m  \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+[33msop_springdocker |[0m   '  |____| .__|_| |_|_| |_\__, | / / / /
+[33msop_springdocker |[0m  =========|_|==============|___/=/_/_/_/
+[33msop_springdocker |[0m  :: Spring Boot ::        (v1.5.3.RELEASE)
+[33msop_springdocker |[0m 
+[33msop_springdocker |[0m 2018-05-07 19:08:24.749  INFO 6 --- [           main] empi.Application                         : The following profiles are active: dev
+[33msop_springdocker |[0m 2018-05-07 19:08:24.854  INFO 6 --- [           main] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@4b2c5e02: startup date [Mon May 07 19:08:24 UTC 2018]; parent: org.springframework.context.annotation.AnnotationConfigApplicationContext@4fb0f2b9
+[33msop_springdocker |[0m 2018-05-07 19:08:30.476  WARN 6 --- [           main] o.s.c.a.ConfigurationClassPostProcessor  : Cannot enhance @Configuration bean definition 'refreshScope' since its singleton instance has been created too early. The typical cause is a non-static @Bean method with a BeanDefinitionRegistryPostProcessor return type: Consider declaring such methods as 'static'.
+[33msop_springdocker |[0m 2018-05-07 19:08:31.049  INFO 6 --- [           main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=33db8119-3431-3f66-9296-be53fe498e1b
+[33msop_springdocker |[0m 2018-05-07 19:08:31.186  INFO 6 --- [           main] f.a.AutowiredAnnotationBeanPostProcessor : JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+[33msop_springdocker |[0m 2018-05-07 19:08:32.375  INFO 6 --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$fb0a313f] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[33msop_springdocker |[0m 2018-05-07 19:08:32.744  INFO 6 --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$1724343c] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[33msop_springdocker |[0m 2018-05-07 19:08:34.428  INFO 6 --- [           main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat initialized with port(s): 9090 (http)
+[33msop_springdocker |[0m 2018-05-07 19:08:34.481  INFO 6 --- [           main] o.apache.catalina.core.StandardService   : Starting service Tomcat
+[33msop_springdocker |[0m 2018-05-07 19:08:34.490  INFO 6 --- [           main] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.14
+[33msop_springdocker |[0m 2018-05-07 19:08:34.934  INFO 6 --- [ost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+[33msop_springdocker |[0m 2018-05-07 19:08:34.935  INFO 6 --- [ost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 10081 ms
+[33msop_springdocker |[0m 2018-05-07 19:08:37.261  INFO 6 --- [ost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'dispatcherServlet' to [/]
+[33msop_springdocker |[0m 2018-05-07 19:08:37.280  INFO 6 --- [ost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'metricsFilter' to: [/*]
+[33msop_springdocker |[0m 2018-05-07 19:08:37.282  INFO 6 --- [ost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+[33msop_springdocker |[0m 2018-05-07 19:08:37.282  INFO 6 --- [ost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+[33msop_springdocker |[0m 2018-05-07 19:08:37.284  INFO 6 --- [ost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+[33msop_springdocker |[0m 2018-05-07 19:08:37.285  INFO 6 --- [ost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+[33msop_springdocker |[0m 2018-05-07 19:08:37.286  INFO 6 --- [ost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'webRequestLoggingFilter' to: [/*]
+[33msop_springdocker |[0m 2018-05-07 19:08:37.287  INFO 6 --- [ost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'applicationContextIdFilter' to: [/*]
+[33msop_springdocker |[0m 2018-05-07 19:08:39.839  INFO 6 --- [           main] o.s.jdbc.datasource.init.ScriptUtils     : Executing SQL script from class path resource [scripts/schema1.sql]
+[33msop_springdocker |[0m 2018-05-07 19:08:39.849  INFO 6 --- [           main] o.s.jdbc.datasource.init.ScriptUtils     : Executed SQL script from class path resource [scripts/schema1.sql] in 9 ms.
+[33msop_springdocker |[0m 2018-05-07 19:08:39.862  INFO 6 --- [           main] o.s.jdbc.datasource.init.ScriptUtils     : Executing SQL script from class path resource [scripts/data1.sql]
+[33msop_springdocker |[0m 2018-05-07 19:08:39.909  INFO 6 --- [           main] o.s.jdbc.datasource.init.ScriptUtils     : Executed SQL script from class path resource [scripts/data1.sql] in 40 ms.
+[33msop_springdocker |[0m 2018-05-07 19:08:45.668  INFO 6 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/],methods=[GET]}" onto public java.lang.String empi.controllers.MainController.index()
+[33msop_springdocker |[0m 2018-05-07 19:08:45.670  INFO 6 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/delete],methods=[GET]}" onto public java.lang.String empi.controllers.MainController.delete(int)
+[33msop_springdocker |[0m 2018-05-07 19:08:45.671  INFO 6 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/create],methods=[POST]}" onto public java.lang.String empi.controllers.MainController.create(java.lang.String,java.lang.String)
+[33msop_springdocker |[0m 2018-05-07 19:08:45.672  INFO 6 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/getUserById],methods=[GET]}" onto public java.lang.String empi.controllers.MainController.getUserById(int)
+[33msop_springdocker |[0m 2018-05-07 19:08:45.673  INFO 6 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/getAll],methods=[GET]}" onto public java.lang.String empi.controllers.MainController.getAll()
+[33msop_springdocker |[0m 2018-05-07 19:08:45.682  INFO 6 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/swagger-resources]}" onto public org.springframework.http.ResponseEntity<java.util.List<springfox.documentation.swagger.web.SwaggerResource>> springfox.documentation.swagger.web.ApiResourceController.swaggerResources()
+[33msop_springdocker |[0m 2018-05-07 19:08:45.688  INFO 6 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/swagger-resources/configuration/ui]}" onto public org.springframework.http.ResponseEntity<springfox.documentation.swagger.web.UiConfiguration> springfox.documentation.swagger.web.ApiResourceController.uiConfiguration()
+[33msop_springdocker |[0m 2018-05-07 19:08:45.691  INFO 6 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/swagger-resources/configuration/security]}" onto public org.springframework.http.ResponseEntity<springfox.documentation.swagger.web.SecurityConfiguration> springfox.documentation.swagger.web.ApiResourceController.securityConfiguration()
+[33msop_springdocker |[0m 2018-05-07 19:08:45.702  INFO 6 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+[33msop_springdocker |[0m 2018-05-07 19:08:45.709  INFO 6 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+[33msop_springdocker |[0m 2018-05-07 19:08:48.582  INFO 6 --- [           main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/metrics/{name:.*}],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.MetricsMvcEndpoint.value(java.lang.String)
+[33msop_springdocker |[0m 2018-05-07 19:08:48.583  INFO 6 --- [           main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/metrics || /metrics.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+[33msop_springdocker |[0m 2018-05-07 19:08:48.585  INFO 6 --- [           main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/configprops || /configprops.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+[33msop_springdocker |[0m 2018-05-07 19:08:48.586  INFO 6 --- [           main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/resume || /resume.json],methods=[POST]}" onto public java.lang.Object org.springframework.cloud.endpoint.GenericPostableMvcEndpoint.invoke()
+[33msop_springdocker |[0m 2018-05-07 19:08:48.600  INFO 6 --- [           main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/restart || /restart.json],methods=[POST]}" onto public java.lang.Object org.springframework.cloud.context.restart.RestartMvcEndpoint.invoke()
+[33msop_springdocker |[0m 2018-05-07 19:08:48.601  INFO 6 --- [           main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/info || /info.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+[33msop_springdocker |[0m 2018-05-07 19:08:48.603  INFO 6 --- [           main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/mappings || /mappings.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+[33msop_springdocker |[0m 2018-05-07 19:08:48.606  INFO 6 --- [           main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/archaius || /archaius.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+[33msop_springdocker |[0m 2018-05-07 19:08:48.622  INFO 6 --- [           main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/health || /health.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.HealthMvcEndpoint.invoke(javax.servlet.http.HttpServletRequest,java.security.Principal)
+[33msop_springdocker |[0m 2018-05-07 19:08:48.624  INFO 6 --- [           main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/pause || /pause.json],methods=[POST]}" onto public java.lang.Object org.springframework.cloud.endpoint.GenericPostableMvcEndpoint.invoke()
+[33msop_springdocker |[0m 2018-05-07 19:08:48.625  INFO 6 --- [           main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/dump || /dump.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+[33msop_springdocker |[0m 2018-05-07 19:08:48.627  INFO 6 --- [           main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/autoconfig || /autoconfig.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+[33msop_springdocker |[0m 2018-05-07 19:08:48.629  INFO 6 --- [           main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/env],methods=[POST]}" onto public java.lang.Object org.springframework.cloud.context.environment.EnvironmentManagerMvcEndpoint.value(java.util.Map<java.lang.String, java.lang.String>)
+[33msop_springdocker |[0m 2018-05-07 19:08:48.630  INFO 6 --- [           main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/env/reset],methods=[POST]}" onto public java.util.Map<java.lang.String, java.lang.Object> org.springframework.cloud.context.environment.EnvironmentManagerMvcEndpoint.reset()
+[33msop_springdocker |[0m 2018-05-07 19:08:48.632  INFO 6 --- [           main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/env/{name:.*}],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EnvironmentMvcEndpoint.value(java.lang.String)
+[33msop_springdocker |[0m 2018-05-07 19:08:48.634  INFO 6 --- [           main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/env || /env.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+[33msop_springdocker |[0m 2018-05-07 19:08:48.639  INFO 6 --- [           main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/beans || /beans.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+[33msop_springdocker |[0m 2018-05-07 19:08:48.648  INFO 6 --- [           main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/trace || /trace.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+[33msop_springdocker |[0m 2018-05-07 19:08:48.652  INFO 6 --- [           main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/loggers/{name:.*}],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.LoggersMvcEndpoint.get(java.lang.String)
+[33msop_springdocker |[0m 2018-05-07 19:08:48.659  INFO 6 --- [           main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/loggers/{name:.*}],methods=[POST],consumes=[application/vnd.spring-boot.actuator.v1+json || application/json],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.LoggersMvcEndpoint.set(java.lang.String,java.util.Map<java.lang.String, java.lang.String>)
+[33msop_springdocker |[0m 2018-05-07 19:08:48.660  INFO 6 --- [           main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/loggers || /loggers.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+[33msop_springdocker |[0m 2018-05-07 19:08:48.661  INFO 6 --- [           main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/auditevents || /auditevents.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public org.springframework.http.ResponseEntity<?> org.springframework.boot.actuate.endpoint.mvc.AuditEventsMvcEndpoint.findByPrincipalAndAfterAndType(java.lang.String,java.util.Date,java.lang.String)
+[33msop_springdocker |[0m 2018-05-07 19:08:48.662  INFO 6 --- [           main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/refresh || /refresh.json],methods=[POST]}" onto public java.lang.Object org.springframework.cloud.endpoint.GenericPostableMvcEndpoint.invoke()
+[33msop_springdocker |[0m 2018-05-07 19:08:48.679  INFO 6 --- [           main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/heapdump || /heapdump.json],methods=[GET],produces=[application/octet-stream]}" onto public void org.springframework.boot.actuate.endpoint.mvc.HeapdumpMvcEndpoint.invoke(boolean,javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse) throws java.io.IOException,javax.servlet.ServletException
+[33msop_springdocker |[0m 2018-05-07 19:08:50.129  INFO 6 --- [           main] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)]
+[33msop_springdocker |[0m 2018-05-07 19:08:50.976  INFO 6 --- [           main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@4b2c5e02: startup date [Mon May 07 19:08:24 UTC 2018]; parent: org.springframework.context.annotation.AnnotationConfigApplicationContext@4fb0f2b9
+[33msop_springdocker |[0m 2018-05-07 19:08:51.392  INFO 6 --- [           main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+[33msop_springdocker |[0m 2018-05-07 19:08:51.394  INFO 6 --- [           main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+[33msop_springdocker |[0m 2018-05-07 19:08:51.848  INFO 6 --- [           main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+[33msop_springdocker |[0m 2018-05-07 19:08:55.446  WARN 6 --- [           main] c.n.c.sources.URLConfigurationSource     : No URLs will be polled as dynamic configuration sources.
+[33msop_springdocker |[0m 2018-05-07 19:08:55.459  INFO 6 --- [           main] c.n.c.sources.URLConfigurationSource     : To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+[33msop_springdocker |[0m 2018-05-07 19:08:55.508  WARN 6 --- [           main] c.n.c.sources.URLConfigurationSource     : No URLs will be polled as dynamic configuration sources.
+[33msop_springdocker |[0m 2018-05-07 19:08:55.519  INFO 6 --- [           main] c.n.c.sources.URLConfigurationSource     : To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+[33msop_springdocker |[0m 2018-05-07 19:08:56.309  INFO 6 --- [           main] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+[33msop_springdocker |[0m 2018-05-07 19:08:56.384  INFO 6 --- [           main] o.s.j.e.a.AnnotationMBeanExporter        : Bean with name 'configurationPropertiesRebinder' has been autodetected for JMX exposure
+[33msop_springdocker |[0m 2018-05-07 19:08:56.385  INFO 6 --- [           main] o.s.j.e.a.AnnotationMBeanExporter        : Bean with name 'refreshEndpoint' has been autodetected for JMX exposure
+[33msop_springdocker |[0m 2018-05-07 19:08:56.387  INFO 6 --- [           main] o.s.j.e.a.AnnotationMBeanExporter        : Bean with name 'restartEndpoint' has been autodetected for JMX exposure
+[33msop_springdocker |[0m 2018-05-07 19:08:56.390  INFO 6 --- [           main] o.s.j.e.a.AnnotationMBeanExporter        : Bean with name 'refreshScope' has been autodetected for JMX exposure
+[33msop_springdocker |[0m 2018-05-07 19:08:56.392  INFO 6 --- [           main] o.s.j.e.a.AnnotationMBeanExporter        : Bean with name 'environmentManager' has been autodetected for JMX exposure
+[33msop_springdocker |[0m 2018-05-07 19:08:56.398  INFO 6 --- [           main] o.s.j.e.a.AnnotationMBeanExporter        : Located managed bean 'environmentManager': registering with JMX server as MBean [org.springframework.cloud.context.environment:name=environmentManager,type=EnvironmentManager]
+[33msop_springdocker |[0m 2018-05-07 19:08:56.461  INFO 6 --- [           main] o.s.j.e.a.AnnotationMBeanExporter        : Located managed bean 'restartEndpoint': registering with JMX server as MBean [org.springframework.cloud.context.restart:name=restartEndpoint,type=RestartEndpoint]
+[33msop_springdocker |[0m 2018-05-07 19:08:56.513  INFO 6 --- [           main] o.s.j.e.a.AnnotationMBeanExporter        : Located managed bean 'refreshScope': registering with JMX server as MBean [org.springframework.cloud.context.scope.refresh:name=refreshScope,type=RefreshScope]
+[33msop_springdocker |[0m 2018-05-07 19:08:56.627  INFO 6 --- [           main] o.s.j.e.a.AnnotationMBeanExporter        : Located managed bean 'configurationPropertiesRebinder': registering with JMX server as MBean [org.springframework.cloud.context.properties:name=configurationPropertiesRebinder,context=4b2c5e02,type=ConfigurationPropertiesRebinder]
+[33msop_springdocker |[0m 2018-05-07 19:08:56.652  INFO 6 --- [           main] o.s.j.e.a.AnnotationMBeanExporter        : Located managed bean 'refreshEndpoint': registering with JMX server as MBean [org.springframework.cloud.endpoint:name=refreshEndpoint,type=RefreshEndpoint]
+[33msop_springdocker |[0m 2018-05-07 19:08:57.264  INFO 6 --- [           main] o.s.c.support.DefaultLifecycleProcessor  : Starting beans in phase 0
+[33msop_springdocker |[0m 2018-05-07 19:08:57.552  INFO 6 --- [           main] o.s.c.support.DefaultLifecycleProcessor  : Starting beans in phase 2147483647
+[33msop_springdocker |[0m 2018-05-07 19:08:57.553  INFO 6 --- [           main] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+[33msop_springdocker |[0m 2018-05-07 19:08:57.776  INFO 6 --- [           main] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+[33msop_springdocker |[0m 2018-05-07 19:08:58.206  INFO 6 --- [           main] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+[33msop_springdocker |[0m 2018-05-07 19:08:59.702  INFO 6 --- [           main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat started on port(s): 9090 (http)
+[33msop_springdocker |[0m 2018-05-07 19:08:59.721  INFO 6 --- [           main] empi.Application                         : Started Application in 42.853 seconds (JVM running for 44.732)
+[33msop_springdocker |[0m 2018-05-07 19:09:23.771  INFO 6 --- [nio-9090-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring FrameworkServlet 'dispatcherServlet'
+[33msop_springdocker |[0m 2018-05-07 19:09:23.772  INFO 6 --- [nio-9090-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization started
+[36msop_mysql       |[0m 2018-05-07T19:56:23.745213Z 0 [Note] InnoDB: page_cleaner: 1000ms intended loop took 9743ms. The settings might not be optimal. (flushed=0 and evicted=0, during the time.)
+[36msop_mysql       |[0m 2018-05-07T21:04:59.428866Z 0 [Note] InnoDB: page_cleaner: 1000ms intended loop took 11161ms. The settings might not be optimal. (flushed=0 and evicted=0, during the time.)

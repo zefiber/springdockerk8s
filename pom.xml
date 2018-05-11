@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>come.demo</groupId>
+  <artifactId>springdockerk8s</artifactId>
+  <packaging>jar</packaging>
+  <version>0.0.1</version>
+  <name>SpringDocker Maven Webapp</name>
+  <url>http://maven.apache.org</url>
+  
+  <parent>
+    <groupId>org.springframework.boot</groupId>
+    <artifactId>spring-boot-starter-parent</artifactId>
+    <version>1.5.3.RELEASE</version>
+  </parent>
+  
+  <properties>
+	<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+	<start-class>empi.Application</start-class>
+  	<java.version>1.8</java.version>
+  	<docker.image.prefix>springbootdocker</docker.image.prefix>
+  	<docker.baseDir>src/main/docker</docker.baseDir>
+  </properties>
+  
+  <dependencies>
+    <dependency>
+        <groupId>org.springframework.boot</groupId>
+        <artifactId>spring-boot-starter-web</artifactId>
+    </dependency>
+    
+    <dependency>
+        <groupId>org.springframework.boot</groupId>
+        <artifactId>spring-boot-starter-test</artifactId>
+        <scope>test</scope>
+    </dependency>
+    
+    <dependency>
+		<groupId>org.springframework.boot</groupId>
+		<artifactId>spring-boot-starter-jdbc</artifactId>
+	</dependency>
+
+    <dependency>
+      <groupId>mysql</groupId>
+      <artifactId>mysql-connector-java</artifactId>
+    </dependency>
+    
+    <dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-actuator</artifactId>
+	</dependency>
+    
+	<dependency>
+	    <groupId>io.springfox</groupId>
+	    <artifactId>springfox-swagger2</artifactId>
+	    <version>2.7.0</version>
+	</dependency>
+	
+	<dependency>
+	    <groupId>io.springfox</groupId>
+	    <artifactId>springfox-swagger-ui</artifactId>
+	    <version>2.7.0</version>
+	</dependency>
+	
+  </dependencies>
+  
+  <build>
+  	<plugins>
+			<plugin>
+				<groupId>org.springframework.boot</groupId>
+				<artifactId>spring-boot-maven-plugin</artifactId>
+			</plugin>
+			
+			<plugin>
+				<artifactId>maven-resources-plugin</artifactId>
+				<executions>
+					<execution>
+						<id>copy-resources</id>
+						<!-- here the phase you need -->
+						<phase>process-resources</phase>
+						<goals>
+							<goal>copy-resources</goal>
+						</goals>
+						<configuration>
+							<outputDirectory>${basedir}/target</outputDirectory>
+							<resources>
+								<resource>
+									<directory>src/main/docker</directory>
+									<includes>
+										<include>Dockerfile</include>
+										<include>wrapper.sh</include>
+									</includes>
+								</resource>
+							</resources>
+						</configuration>
+					</execution>
+				</executions>
+			</plugin>
+			
+			<plugin>
+			  <groupId>com.spotify</groupId>
+			  <artifactId>dockerfile-maven-plugin</artifactId>
+			  <version>1.4.0</version>
+			  <executions>
+			    <execution>
+			      <id>default</id>
+			      <goals>
+			        <goal>build</goal>
+			        <goal>push</goal>
+			      </goals>
+			    </execution>
+			  </executions>
+			  <configuration>
+			    <repository>${project.artifactId}</repository>
+			    <tag>${project.version}</tag>
+			    <contextDirectory>${project.build.directory}</contextDirectory>
+			    <buildArgs>
+			      <JAR_FILE>${project.build.finalName}.jar</JAR_FILE>
+			    </buildArgs>
+			  </configuration>
+			</plugin>
+			
+	      <plugin>
+	        <groupId>io.fabric8</groupId>
+	        <artifactId>fabric8-maven-plugin</artifactId> 
+	        <version>3.5.22</version>
+	        <executions>
+	          <execution>
+	            <goals>
+	              <goal>resource</goal>
+	              <goal>build</goal>
+	            </goals>
+	          </execution>
+	        </executions>
+	      </plugin>
+			
+			
+	</plugins>
+  </build>
+</project>
