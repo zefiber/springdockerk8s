@@ -1,0 +1,56 @@
+apiVersion: apps/v1 # for versions before 1.9.0 use apps/v1beta2
+kind: Deployment
+metadata:
+  name: springdockerk8s-deployment
+spec:
+  selector:
+    matchLabels:
+      app: springdockerk8s
+  replicas: 2 # tells deployment to run 2 pods matching the template
+  template: # create pods using pod definition in this template
+    metadata:
+      # unlike pod-nginx.yaml, the name is not included in the meta data as a unique name is
+      # generated from the deployment name
+      labels:
+        app: springdockerk8s
+    spec:
+      containers:
+      - name: springdockerk8s
+        image: zefiber/zetest:springdockerfork8s_v5
+        ports:
+        - containerPort: 9090
+        volumeMounts:
+        - name: application-config
+          mountPath: "/deployments/config"
+          readOnly: true
+        env:
+        - name: JVM_ARGUMENTS
+          value: "-Dspring.profiles.active=dev -Dspring.config.location=/deployments/config/application.properties -Xdebug -Xrunjdwp:transport=dt_socket,server=y,suspend=n,address=5005"
+      volumes:
+      - name: application-config
+        configMap:
+          name: spring-app-config
+          items:
+          - key: application.properties
+            path: application.properties
+
+---
+
+apiVersion: v1
+kind: Service
+metadata:
+  name: springdocker-service
+spec:
+  ports:
+  - port: 9090 # the port that this service should serve on
+    # the container on each pod to connect to, can be a name
+    # (e.g. 'www') or a number (e.g. 80)
+    targetPort: 9090
+    protocol: TCP
+  # just like the selector in the deployment,
+  # but this time it identifies the set of pods to load balance
+  # traffic to.
+  selector:
+    app: springdockerk8s
+  type: NodePort
+

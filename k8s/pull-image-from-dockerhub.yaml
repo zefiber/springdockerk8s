@@ -1,0 +1,12 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: springdockerk8s
+spec:
+  containers:
+    - name: springdockerk8s
+      image: index.docker.io/zefiber/zetest:springdockerfork8s_v1
+      imagePullPolicy: Always
+      command: [ "echo", "SUCCESS" ]
+  imagePullSecrets:
+    - name: myregistrykey
