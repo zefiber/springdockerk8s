@@ -130,4 +130,48 @@ public class MainController
     return retMsg;
   }
 
+  /**
+   * /fizzBuzz --> Print fizz, Buzz or fizzBuzz.
+   * 
+   * @param n
+   *          the number of the element to print
+   * @return A list of fizz buzz print out.
+   */
+  @RequestMapping(value = "/fizzBuzz", method = RequestMethod.GET)
+  @ResponseBody
+  public String fizzBuzz(int n)
+  {
+    StringBuilder retMsg = new StringBuilder();
+    if (n < 0 || n > 2 * Integer.parseInt(Integer.toBinaryString(2 << 4)))
+    {
+      retMsg.append("Out of boundry");
+    }
+
+    for (int i = 1; i < n + 1; i++)
+    {
+      if (i % 3 == 0 && i % 5 == 0)
+      {
+        retMsg.append("FizzBuzz");
+        retMsg.append(System.getProperty("line.separator"));
+      }
+      else if (i % 3 == 0)
+      {
+        retMsg.append("Fizz");
+        retMsg.append(System.getProperty("line.separator"));
+      }
+      else if (i % 5 == 0)
+      {
+        retMsg.append("Buzz");
+        retMsg.append(System.getProperty("line.separator"));
+      }
+      else
+      {
+        retMsg.append(i);
+        retMsg.append(System.getProperty("line.separator"));
+      }
+    }
+
+    return retMsg.toString();
+  }
+
 }
