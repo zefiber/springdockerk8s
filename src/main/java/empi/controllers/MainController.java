@@ -145,6 +145,7 @@ public class MainController
     if (n < 0 || n > 2 * Integer.parseInt(Integer.toBinaryString(2 << 4)))
     {
       retMsg.append("Out of boundry");
+      return retMsg.toString();
     }
 
     for (int i = 1; i < n + 1; i++)
