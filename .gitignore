@@ -31,3 +31,8 @@ target/classes/META-INF/maven/come.demo/springdockerk8s/pom.xml
 target/classes/META-INF/maven/come.demo/springdockerk8s/pom.properties
 target/classes/META-INF/MANIFEST.MF
 target/Dockerfile
+target/test-classes/META-INF/docker/come.demo/springdockerk8s/tag
+target/test-classes/META-INF/docker/come.demo/springdockerk8s/repository
+target/test-classes/META-INF/docker/come.demo/springdockerk8s/image-name
+target/test-classes/META-INF/docker/come.demo/springdockerk8s/image-id
+k8s/start-app.log
