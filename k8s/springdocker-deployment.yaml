@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
       - name: springdockerk8s
-        image: zefiber/zetest:springdockerfork8s_v5
+        image: zefiber/zetest:springdockerfork8s_v6
         ports:
         - containerPort: 9090
         volumeMounts:

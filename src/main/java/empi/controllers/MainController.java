@@ -152,22 +152,22 @@ public class MainController
       if (i % 3 == 0 && i % 5 == 0)
       {
         retMsg.append("FizzBuzz");
-        retMsg.append(System.getProperty("line.separator"));
+        retMsg.append("<br>");
       }
       else if (i % 3 == 0)
       {
         retMsg.append("Fizz");
-        retMsg.append(System.getProperty("line.separator"));
+        retMsg.append("<br>");
       }
       else if (i % 5 == 0)
       {
         retMsg.append("Buzz");
-        retMsg.append(System.getProperty("line.separator"));
+        retMsg.append("<br>");
       }
       else
       {
         retMsg.append(i);
-        retMsg.append(System.getProperty("line.separator"));
+        retMsg.append("<br>");
       }
     }
 
