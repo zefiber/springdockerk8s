@@ -16,7 +16,8 @@ spec:
     spec:
       containers:
       - name: springdockerk8s
-        image: zefiber/springdockerk8sdemo:0.0.5
+        image: zefiber/springdockerk8sdemo:0.0.7
+        imagePullPolicy: "Always"
         ports:
         - containerPort: 9090
         volumeMounts:

@@ -3,7 +3,7 @@
   <groupId>come.demo</groupId>
   <artifactId>springdockerk8sdemo</artifactId>
   <packaging>jar</packaging>
-  <version>0.0.1</version>
+  <version>0.0.22-SNAPSHOT</version>
   <name>SpringDocker Maven Webapp</name>
   <url>http://maven.apache.org</url>
   
@@ -118,6 +118,15 @@
 				<skip>${skipDocker}</skip>
 			  </configuration>
 			</plugin>
+			
+	  <plugin>
+	        <groupId>org.apache.maven.plugins</groupId>
+	        <artifactId>maven-release-plugin</artifactId>
+	        <version>2.5.3</version>
+	        <configuration>
+	          <tagNameFormat>v@{project.version}</tagNameFormat>
+	        </configuration>
+      </plugin>
 			
 	</plugins>
   </build>
