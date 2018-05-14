@@ -45,3 +45,6 @@ target/test-classes/META-INF/docker/come.demo/springdockerk8sdemo/image-id
 target/springdockerk8sdemo-0.0.1.jar.original
 target/springdockerk8sdemo-0.0.1.jar
 target/springdockerk8sdemo-0.0.1-docker-info.jar
+target/test-classes/empi/test/TestController.class
+target/classes/empi/models/LinkedListNode.class
+target/classes/application.properties
