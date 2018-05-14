@@ -10,7 +10,9 @@ import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.bind.annotation.RestController;
 
+import empi.Application;
 import empi.dao.UserRepository;
+import empi.models.LinkedListNode;
 import empi.models.User;
 
 @RestController
@@ -175,4 +177,85 @@ public class MainController
     return retMsg.toString();
   }
 
+  /**
+   * /show Linked list --> display linked list
+   * 
+   * @return show the initial linked list
+   */
+  @RequestMapping(value = "/showLinkedList", method = RequestMethod.GET)
+  @ResponseBody
+  public String showLinkedList()
+  {
+    return Application.linkedList.toString();
+  }
+
+  /**
+   * /removeNode --> Remove a node from linked list
+   * 
+   * @param x
+   *          if the x is greater than any value from the linked list, remove
+   *          the node
+   * @return A new linked list
+   */
+  @RequestMapping(value = "/removeNode", method = RequestMethod.GET)
+  @ResponseBody
+  public String removeNode(int x)
+  {
+    LinkedListNode list = Application.linkedList;
+    if (list == null
+        || x > 2 * Integer.parseInt(Integer.toBinaryString(2 << 4)))
+    {
+      return "Out of Boundry";
+    }
+
+    if (list.val > x && list.next == null)
+    {
+      return list.toString();
+    }
+
+    LinkedListNode cur = list;
+    LinkedListNode prev = null;
+
+    while (cur != null && cur.val > x)
+    {
+      prev = cur;
+      cur = cur.next;
+    }
+
+    if (prev != null)
+    {
+      prev.next = null;
+    }
+
+    LinkedListNode newHead = cur;
+
+    while (cur.next != null)
+    {
+      if (cur.next.val > x)
+      {
+        cur.next = cur.next.next;
+      }
+      else
+      {
+        cur = cur.next;
+      }
+    }
+
+    Application.linkedList = newHead;
+
+    return newHead.toString();
+  }
+
+  /**
+   * /rest Linked list --> rest linked list
+   * 
+   * @return show the initial linked list
+   */
+  @RequestMapping(value = "/resetLinkedList", method = RequestMethod.GET)
+  @ResponseBody
+  public String resetLinkedList()
+  {
+    Application.LinkedListNodeInializer();
+    return Application.linkedList.toString();
+  }
 }

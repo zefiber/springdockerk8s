@@ -13,7 +13,9 @@ import org.springframework.test.web.servlet.MockMvc;
 import org.springframework.test.web.servlet.setup.MockMvcBuilders;
 import org.springframework.web.context.WebApplicationContext;
 
-public class TestUserController extends ApplicationTests
+import empi.models.User;
+
+public class TestController extends ApplicationTests
 {
 
   @Autowired
@@ -31,11 +33,22 @@ public class TestUserController extends ApplicationTests
   public void testGetAllUsers() throws Exception
   {
 
-    mockMvc.perform(get("/getAllUsers")).andExpect(status().isOk())
+    User user1 = new User("ze1", "ze1@gmail.com");
+    user1.setId(1);
+    User user2 = new User("ze2", "ze2@gmail.com");
+    user2.setId(2);
+    User user3 = new User("ze3", "ze3@gmail.com");
+    user3.setId(3);
+    StringBuilder testResult = new StringBuilder();
+    testResult.append(user1.toString());
+    testResult.append("\n");
+    testResult.append(user2.toString());
+    testResult.append("\n");
+    testResult.append(user3.toString());
+    testResult.append("\n");
+    mockMvc.perform(get("/getAll")).andExpect(status().isOk())
         .andExpect(content().contentType("text/plain;charset=UTF-8"))
-        .andExpect(content().string(containsString("1,zew222,zew222@gmail.com"
-            + System.lineSeparator() + "2,zew111,zew111@gmail.com"
-            + System.lineSeparator() + "3,zew333,zew333@gmail.com")));
+        .andExpect(content().string(containsString(testResult.toString())));
 
   }
 
