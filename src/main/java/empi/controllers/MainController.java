@@ -227,6 +227,12 @@ public class MainController
       prev.next = null;
     }
 
+    if (cur == null)
+    {
+      Application.linkedList = null;
+      return "";
+    }
+
     LinkedListNode newHead = cur;
 
     while (cur.next != null)
